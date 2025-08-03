@@ -1,39 +1,35 @@
-  body {
-      background-image: url('img/bg\ \(2\).jpg');  /* Image path */
-      background-size: cover;                  /* Cover the whole screen */
-      background-position:initial;             /* Center the image */
-      background-repeat: no-repeat;            /* Prevent repeating */
+/* Make carousel fullscreen */
+    .carousel-item {
+      height: 100vh;
+      min-height: 500px;
+      background-size: cover;
+      background-position: center;
     }
 
-
-     /* Paragraph container */
+    /* Welcome text style */
     .welcome-text {
-      background: rgba(0, 0, 51, 0.6); /* Dark blue transparent background */
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: rgba(0, 51, 102, 0.6);
       color: white;
-      max-width: 700px;
-      margin: 20% auto;
+      max-width: 800px;
       padding: 30px;
       border-radius: 15px;
       text-align: center;
-      font-size: 1.2rem;
+      font-size: 1.3rem;
       line-height: 1.8;
       box-shadow: 0 0 20px rgba(0,0,0,0.3);
       animation: fadeInUp 2s ease-out;
     }
 
-    /* Simple fade-in animation */
     @keyframes fadeInUp {
-      0% {
-        opacity: 0;
-        transform: translateY(50px);
-      }
-      100% {
-        opacity: 1;
-        transform: translateY(0);
-      }
+      0% { opacity: 0; transform: translate(-50%, -40%); }
+      100% { opacity: 1; transform: translate(-50%, -50%); }
     }
 
-     /* Footer style */
+    /* Footer style */
     footer {
       background-color: #003366;
       color: white;
@@ -41,40 +37,10 @@
     }
 
     footer a {
-      color: #ffffff;
-      text-decoration: none;
-    }
-
-    footer a:hover {
-      color: #00bfff;
-    }
-     /* Footer style */
-    footer {
-      background-color: #003366;
       color: white;
-      padding: 40px 20px;
-      margin-top: auto;
-      animation: footerSlideUp 2s ease-out;
-    }
-
-    footer a {
-      color: #ffffff;
       text-decoration: none;
-      transition: 0.3s;
     }
 
     footer a:hover {
       color: #00bfff;
-    }
-
-     /* Footer animation */
-    @keyframes footerSlideUp {
-      0% { 
-        opacity: 0; 
-        transform: translateY(100px);
-      }
-      100% { 
-        opacity: 1; 
-        transform: translateY(0);
-      }
     }
