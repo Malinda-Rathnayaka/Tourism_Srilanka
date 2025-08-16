@@ -31,7 +31,7 @@
 
     /* Footer style */
     footer {
-      background-color: #003366;
+      background-color: #0673e0;
       color: white;
       padding: 40px 20px;
     }
@@ -44,3 +44,15 @@
     footer a:hover {
       color: #00bfff;
     }
+    .imgbg{
+      width: 1700px;
+    }
+    .cardCustom{
+      width: 100px;
+    
+      
+    }
+    /* .imageCard{
+      width: 500px;
+      
+    } */
